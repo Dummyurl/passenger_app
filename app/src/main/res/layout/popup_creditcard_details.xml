@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/theme"
+                android:weightSum="3" >
+
+                <Button
+                    android:id="@+id/btnCloseCrdtCard"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_bg"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.8"
+                    android:gravity="center_horizontal"
+                    android:text="Credit Card Data"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edtCardHlerFirstName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner"
+                    android:hint="@string/set_credit_card_dialog_hint_name_on_card"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:inputType="textCapSentences"
+                    android:textColorHint="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/txtCardType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/bg_spinner"
+                    android:drawableRight="@drawable/arrow_down"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Credit Card Type"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edtCardNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner"
+                    android:hint="Credit Card Number"
+                    android:inputType="number"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_gray" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:weightSum="2"
+                                android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/txtCardExprDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:hint="MM/dd/YYYY"
+                                android:textColor="@color/black"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/bg_spinner"
+                                android:textColorHint="@color/light_gray"
+                                android:layout_gravity="center"
+                                android:editable="false"
+                                android:autoText="false"
+                                android:singleLine="true" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/ic_calender"
+                            android:layout_marginRight="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="2"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/edtCardSecurCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/light_gray"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/bg_spinner"
+                            android:layout_gravity="center"
+                            android:hint="Security code"
+                            android:singleLine="true" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/ic_question"
+                            android:layout_marginRight="5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtCardSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_accept_bg"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="Submit"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

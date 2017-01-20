@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/pickup_terms_main_text"
+        android:gravity="center_vertical"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickup_terms_main_text"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_cancel"
+            android:id="@+id/pickup_terms_dialog_cancel_btn"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_accept"
+            android:id="@+id/pickup_terms_dialog_accept_btn"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>

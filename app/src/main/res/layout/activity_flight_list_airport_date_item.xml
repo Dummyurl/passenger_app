@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:layout_marginLeft="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/flightlist_airport"
+        android:id="@+id/textView27"
+        android:layout_weight="1.5"
+        style="@style/BlackTextViewStyle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flight_airport_texview"
+        android:layout_weight="0.5"
+        style="@style/BlackTextViewStyle"
+        android:singleLine="true" />
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:layout_marginLeft="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/flightlist_date"
+        android:id="@+id/textView30"
+        android:layout_weight="1.5"
+        style="@style/BlackTextViewStyle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flight_date_texview"
+        android:layout_weight="0.5"
+        style="@style/BlackTextViewStyle"
+        android:singleLine="true"/>
+</LinearLayout>
+</LinearLayout>

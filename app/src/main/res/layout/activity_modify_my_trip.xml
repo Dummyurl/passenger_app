@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/theme"
+                android:weightSum="3"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/modify_trip_info_cancel"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_bg"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.8"
+                    android:gravity="center_horizontal"
+                    android:text="@string/modify_trip_activity_title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:id="@+id/modify_trip_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_bg"
+                    android:text="Done"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/new_trip_when" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffffff"
+                    android:textSize="16dp"
+                    android:textStyle="normal"
+                    android:paddingLeft="60dp"
+                    android:typeface="monospace"
+                    android:text="@string/modify_trip_activity_update_when" />
+
+                <TextView
+                    android:id="@+id/textview_time_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    style="@style/myTripTextViewDisabled"
+                    android:drawableRight="@drawable/ic_calender"
+                    android:enabled="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/my_trip_flight_info"
+                android:id="@+id/modify_trip_flight_info" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="25"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffffff"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:paddingLeft="60dp"
+                    android:typeface="monospace"
+                    android:text="@string/modify_trip_activity_update_flight"
+                    android:id="@+id/textView13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/modify_flightinfo_btn"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/my_edit_trips_fragment_view"
+                    style="@style/blueBtnWithGradient"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/modify_flightinfo_edit_btn"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/my_edit_trips_fragment_edit"
+                    style="@style/blueBtnWithGradient"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/yellow_btn"
+                android:id="@+id/modify_cancel_trip"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_trips_fragment_get_cancel_trip"
+                    android:id="@+id/textview19"
+                    android:textColor="#ffffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

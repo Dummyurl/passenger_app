@@ -1,0 +1,182 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppBaseThemeLight" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/dark_graylight</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:actionBarStyle">@style/BlueActionBar</item>
+        <item name="actionBarStyle">@style/BlueActionBar</item>
+    </style>
+    <style name="BlueActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@android:color/holo_blue_dark</item>
+        <item name="background">@android:color/holo_blue_dark</item>
+    </style>
+    <style name="BlueColumnRow" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@android:color/holo_blue_dark</item>
+        <item name="background">@android:color/holo_blue_dark</item>
+    </style>
+    <style name="WhiteColumnRow" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@android:color/white</item>
+        <item name="background">@android:color/white</item>
+    </style>
+    <style name="DarkBlueColumnRow" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@android:color/holo_blue_dark</item>
+        <item name="background">@android:color/holo_blue_dark</item>
+    </style>
+
+
+    <style name="greenTextView" parent="AppBaseThemeLight">
+        <item name="android:textColor">@color/green</item>
+    </style>
+    <style name="largeTextTitle" parent="AppBaseThemeLight">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <style name="redBigTextView" parent="AppBaseThemeLight">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="BlackTextViewStyle" parent="AppBaseThemeLight">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="FlightColumnTextView" parent="BlackTextViewStyle">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="FlightBottomTextViewBtnStyle" parent="AppBaseThemeLight">
+        <item name="android:textColor">@drawable/disabled_textview</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="TextViewAsButton" parent="AppBaseThemeLight">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="driverListRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">22dip</item>
+        <item name="android:maxHeight">22dip</item>
+    </style>
+
+    <style name="blueBtnWithGradient" parent="AppBaseThemeLight">
+        <item name="android:background">@drawable/blue_gradient_btn</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="myTripTextViewDisabled" parent="AppBaseThemeLight">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:background">@color/dark_gray</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:enabled">false</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <style name="AutocompleteFlightView" parent="AppBaseThemeLight">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_spinner</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+    </style>
+
+    <style name="TripDetailItemLayout" parent="AppBaseThemeLight">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/dark_graylight</item>
+        <item name="android:weightSum">2</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="TripDetailWidthButtonLayout" parent="AppBaseThemeLight">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">#ffd59c02</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="TripDetailWidthButtonTextView" parent="AppBaseThemeLight">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TripDetailImageIcon" parent="AppBaseThemeLight">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="TripDetailTextView" parent="AppBaseThemeLight">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    <style name="TripDetailEditTextView" parent="AppBaseThemeLight">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@color/dark_gray</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:enabled">false</item>
+    </style>
+    <style name="TripDetailButtonTextView" parent="AppBaseThemeLight">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/blue_gradient_btn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+
+    <style name="AppThemeLight" parent="AppBaseThemeLight">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="BlueTextViewStyle" parent="AppBaseThemeLight">
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+    </style>
+
+</resources>

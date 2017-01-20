@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srlNewTrip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/trip_in_progress_sana_notification"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/trip_in_progress_notification">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/trip_reservation_notification"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/trip_reservation_notification">
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/trip_future_reservation_notification"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/trip_future_reservation_notification" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_trip_start"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Pick Up"
+                android:gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:paddingLeft="70dp"
+                android:typeface="monospace">
+            </TextView>
+            <TextView
+                android:id="@+id/edtCrntLoca_mytrip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/myTripTextViewDisabled"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/new_trip_end" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+
+                android:gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:paddingLeft="70dp"
+                android:typeface="monospace"
+                android:text="Drop Off">
+            </TextView>
+
+            <TextView
+                android:id="@+id/setDestination_mytrip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/myTripTextViewDisabled"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/new_trip_when" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:paddingLeft="70dp"
+                android:typeface="monospace"
+                android:text="WHEN">
+            </TextView>
+
+            <TextView
+                android:id="@+id/setTime_mytrip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/myTripTextViewDisabled"
+                android:gravity="center_vertical"
+                android:text="By the trip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/new_trip_passengers" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="25"
+                android:gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:paddingLeft="70dp"
+                android:typeface="monospace"
+                android:text="HOW MANY PASSENGERS?">
+            </TextView>
+
+            <TextView
+                android:id="@+id/num_passenger_mytrip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1"
+                style="@style/myTripTextViewDisabled"
+                android:padding="0dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/new_trip_fare" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:paddingLeft="70dp"
+                android:typeface="monospace"
+                android:text="RENT BY">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtSettNwTrpFareType_mytrip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="By the trip"
+                android:visibility="visible"
+                style="@style/myTripTextViewDisabled" />
+
+            <TextView
+                android:id="@+id/txtSettNwTrpHrFare_mytrip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/myTripTextViewDisabled"
+                android:layout_weight="1"
+                android:background="@drawable/bg_spinner"
+                android:drawableRight="@drawable/arrow_down"
+                android:gravity="center_vertical"
+                android:text="1"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/mytrip_vehiclestyle_title"
+            android:id="@+id/carStyleComboTitleLinearLayout">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#4f4f4f"
+            android:id="@+id/carStyleComboLinearLayout"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Car style"
+                android:gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:paddingLeft="60dp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/car_style_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Any"
+                android:visibility="visible"
+                style="@style/myTripTextViewDisabled"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:id="@+id/styleCarImageView"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/styleCarTextView"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone">
+
+        <com.passengerapp.main.widget.VehicleStyleScrollable
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:id="@+id/vehicleStyleScrollable_mytrip">
+
+        </com.passengerapp.main.widget.VehicleStyleScrollable>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/new_trip_notes" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_additional_notes_mytrip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                style="@style/myTripTextViewDisabled"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/my_trip_flight_info"
+            android:id="@+id/flight_info_panel">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="25"
+                android:gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:paddingLeft="60dp"
+                android:typeface="monospace"
+                android:text="@string/detailed_flight_info"
+                android:id="@+id/textView12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/view_flight_btn"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/mytrips_view_flightinfo_btn"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated Fare:  "
+                    android:id="@+id/estimate_fare"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/estimate_fare_value"
+                    android:textStyle="bold"
+                    android:textColor="#ff000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_trips_fragment_reservation_id_title"
+                    android:id="@+id/reservation_id_title"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reservation_id_value"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver:  "
+                    android:id="@+id/textView4"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/driver_value"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/my_trip_call_driver"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="25"
+                android:gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:paddingLeft="60dp"
+                android:typeface="monospace"
+                android:text="@string/detailed_call_my_driver"
+                android:id="@+id/textView11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/call_driver_btn"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/mytrips_call_driver_btn"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/my_trip_call_driver"
+            android:orientation="horizontal"
+            android:id="@+id/my_trip_call_company_office">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="25"
+                android:gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:paddingLeft="60dp"
+                android:typeface="monospace"
+                android:text="@string/detailed_call_company_office"
+                android:id="@+id/textView10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/my_trip_call_company_office_btn"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/mytrips_call_driver_btn"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_trips_fragment_text_to_modify"
+            android:id="@+id/additional_text_in_bottom"
+            android:textStyle="normal"
+            android:padding="15dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#ffd59c02"
+            android:id="@+id/review_cancel_btn"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_trips_fragment_get_modify_trip"
+                android:id="@+id/review_cancel_textview"
+                android:textColor="#ffffffff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/cancel_trip_btn"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</ScrollView>

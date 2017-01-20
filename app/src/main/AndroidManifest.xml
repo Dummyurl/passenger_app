@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.passengerapp" >
+
+    <permission
+        android:name="com.passengerapp.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.passengerapp.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.passengerapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.passengerapp.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--android:name="com.passengerapp.main.HGBPassengerApplication"
+        -->
+    <application
+        android:name=".main.HGBPassengerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_map_api" />
+
+        <activity
+            android:name=".main.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".main.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".main.CancelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".main.CompanyLinkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".main.SetCompanyLinkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".main.dialogs.InstructuionDriverDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".main.dialogs.SetCreditCardDataDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".main.dialogs.VehicleStylesDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".main.RateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="activity_b" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.dialogs.RegisterPassengerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".main.dialogs.SetDestinationDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseThemeLight"/>
+        <activity android:name=".main.ModifyTripActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseThemeLight"/>
+        <activity android:name=".main.dialogs.PickUp.PickUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseThemeLight"/>
+        <activity android:name=".main.dialogs.EnterCouponActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseThemeLight"/>
+        <activity android:name=".main.FlightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseThemeLight"/>
+        <activity android:name=".main.FlightListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseThemeLight"/>
+        <activity android:name=".main.FlightSpecialInstructions"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseThemeLight"/>
+        <activity android:name=".main.FlightDetailView"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseThemeLight"/>
+        <activity
+            android:name=".main.RoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.dialogs.ReviewDriverDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".main.uc.WheelHourMinuteActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".main.uc.WheelDateActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".main.uc.WheelDateTimeActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".main.uc.WheelActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".main.ApproveTipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.SignConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.FlightRoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.dialogs.FlightInfoDriverDialog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.HistoryListActivity"
+            android:screenOrientation="portrait" />
+        <receiver
+            android:name=".main.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.passengerapp" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".main.services.locationManager.LocationManagerService" />
+        <receiver android:name=".main.services.locationManager.LocationManagerUpdateLocationReceiver" >
+            <intent-filter>
+                <action android:name="com.passengerapp.RECEIVE_UPDATED_LOCATION" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".main.GCMIntentService" />
+        <service
+            android:name=".main.services.backendPushService.BootService"
+            android:enabled="true" />
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="f10fe86151478a7332643804a1ea7aedd20ef8d9" />
+    </application>
+
+</manifest>

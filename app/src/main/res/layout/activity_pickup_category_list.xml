@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView"
+                android:layout_above="@+id/terms_and_condition_layout"
+                android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:id="@+id/list_of_drivers_category_table">
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <com.passengerapp.main.widget.TermsAndCondition.TermsAndConditionView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/terms_and_condition_layout"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp">
+
+            </com.passengerapp.main.widget.TermsAndCondition.TermsAndConditionView>
+        </RelativeLayout>
+
+
+</LinearLayout>

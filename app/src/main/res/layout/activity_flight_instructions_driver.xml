@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <include layout="@layout/activity_flight_actionbar"
+        android:id="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_flight_instruction_for_driver"
+            android:id="@+id/special_instructions_edittext_title"
+            style="@style/largeTextTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/additional_info_titleview"
+            android:visibility="gone" />
+
+        <com.passengerapp.main.widget.DoneActionEditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="8"
+            android:minLines="4"
+            android:gravity="top|left"
+            android:id="@+id/special_instructions_edittext"
+            android:background="@drawable/bg_spinner"
+            android:imeOptions="actionDone"
+            android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+            android:maxLines="3"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/selected_flight_number_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_flight_instruction_for_driver_selected_flight_number"
+                android:id="@+id/selected_flight_number_title"
+                style="@style/BlackTextViewStyle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/selected_flight_number"
+                style="@style/BlackTextViewStyle"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear_arrival_instructions"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear_car_service_radiogroup"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/radio_group_car_service"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/car_service_baggage_area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_flight_instruction_for_driver_car_service_baggage_area"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/car_service_limo_pickup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_flight_instruction_for_driver_car_service_limo_pickup"
+                        android:textColor="@color/black" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear_taxi_radiogroup"
+                android:visibility="gone">
+
+                <RadioGroup
+                    android:id="@+id/radio_group_taxi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/taxi_baggage_area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_flight_instruction_for_driver_car_service_baggage_area"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/taxi_taxi_pickup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_flight_instruction_for_driver_taxi_taxi_pickup"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout4"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:text="@string/common_back"
+            android:id="@+id/back_btn_textview"
+            android:layout_weight="1"
+            style="@style/FlightBottomTextViewBtnStyle"/>
+
+        <TextView
+            android:text="@string/common_done"
+            android:id="@+id/done_btn_textview"
+            android:layout_weight="1"
+            style="@style/FlightBottomTextViewBtnStyle"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/srlQuotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >-->
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <!--<TableLayout
+                android:id="@+id/quotesTableLayoutHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/dark_graylight"
+                    android:paddingTop="3dp">-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:weightSum="10"
+                android:id="@+id/quotes_header_layout">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:width="0px"
+                            android:layout_height="match_parent"
+                            android:text="RIDE"
+                            android:id="@+id/column_1_ride_all"
+                            android:background="@color/dark_gray"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:textSize="@dimen/my_quotes_header_title_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_height="match_parent"
+                            android:width="0px"
+                            android:id="@+id/column_2_location_all"
+                            android:background="@color/dark_graylight"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:src="@drawable/settings_icon_map"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:layout_width="match_parent" />
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:width="0px"
+                            android:text="Num of Hours"
+                            android:id="@+id/column_2_location_textview_all"
+                            android:background="@color/dark_graylight"
+                            android:textColor="@color/white"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:layout_gravity="bottom|top"
+                            android:layout_width="match_parent"
+                            android:textSize="@dimen/my_quotes_header_title_size"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:width="0px"
+                            android:text="RIDER\nRATING"
+                            android:id="@+id/column_3_rider_rating_all"
+                            android:background="@color/dark_graylight"
+                            android:textColor="@color/white"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:layout_gravity="bottom|top"
+                            android:layout_width="match_parent"
+                            android:textSize="@dimen/my_quotes_header_title_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:width="0px"
+                            android:text="FARE"
+                            android:id="@+id/column_4_fare_all"
+                            android:background="@color/dark_graylight"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:textSize="@dimen/my_quotes_header_title_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:width="0px"
+                            android:text="TIP\nINCLUDED"
+                            android:id="@+id/column_5_tip_icluded_all"
+                            android:background="@color/dark_graylight"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textColor="@color/white"
+                            android:layout_gravity="bottom|top"
+                            android:layout_width="match_parent"
+                            android:textSize="@dimen/my_quotes_header_title_size" />
+                    </LinearLayout>
+                <!--</TableRow>
+            </TableLayout>-->
+                </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:weightSum="12"
+        android:id="@+id/shuttleTitleRow">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2" >
+
+            <TextView
+                android:width="0px"
+                android:layout_height="match_parent"
+                android:text="RIDE"
+                android:id="@+id/column_1_ride_shuttle"
+                android:background="@color/dark_gray"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:width="0px"
+                android:id="@+id/column_2_location_shuttle"
+                android:background="@color/dark_graylight"
+                android:gravity="center_vertical|center_horizontal"
+                android:src="@drawable/settings_icon_map"
+                android:scaleType="centerInside"
+                android:padding="5dp"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:text="Num of Hours"
+                android:id="@+id/column_2_location_textview_shuttle"
+                android:background="@color/dark_graylight"
+                android:textColor="@color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom|top"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2" >
+
+            <TextView
+                android:layout_height="match_parent"
+                android:width="0px"
+                android:text="RIDER\nRATING"
+                android:id="@+id/column_3_rider_rating_shuttle"
+                android:background="@color/dark_graylight"
+                android:textColor="@color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom|top"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2" >
+
+            <TextView
+                android:layout_height="match_parent"
+                android:width="0px"
+                android:text="FARE"
+                android:id="@+id/column_4_fare_shuttle"
+                android:background="@color/dark_graylight"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2" >
+
+            <TextView
+                android:layout_height="match_parent"
+                android:width="0px"
+                android:text="TIME"
+                android:id="@+id/column_6_timedest_shuttle"
+                android:background="@color/dark_graylight"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom|top"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:id="@+id/linearLayout3">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:width="0px"
+                android:text="# PASS"
+                android:id="@+id/column_7_capacity_shuttle"
+                android:background="@color/dark_graylight"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom|top"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+                android:id="@+id/quotes_data_layout"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/quotes_header_layout"
+                android:layout_above="@+id/linearLayout_bottom">
+                <ScrollView
+                    android:id="@+id/quotes_data_scroll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/quotes_main_data_layout">
+                    </LinearLayout>
+
+                        <!--<TableLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/quotes_data_table_layout">
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                            </TableRow>
+                        </TableLayout>-->
+
+                </ScrollView>
+            </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:weightSum="8"
+        android:id="@+id/linearLayout_bottom"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:width="0px"
+                android:layout_height="match_parent"
+                android:text="ALL"
+                android:id="@+id/column_all"
+                android:background="@color/dark_gray"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:width="0px"
+                android:layout_height="match_parent"
+                android:text="TAXI"
+                android:id="@+id/column_taxi"
+                android:background="@color/dark_graylight"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffffff00"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:width="0px"
+                android:layout_height="match_parent"
+                android:text="CAR SERVICE"
+                android:id="@+id/column_car_service"
+                android:background="@color/dark_graylight"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#ffbebebe"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:width="0px"
+                android:layout_height="match_parent"
+                android:text="SHUTTLE"
+                android:id="@+id/column_shuttle"
+                android:background="@color/dark_graylight"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/green"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+        </LinearLayout>
+
+        <!--</TableRow>
+    </TableLayout>-->
+    </LinearLayout>
+
+</RelativeLayout>
+    <!--</ScrollView>-->

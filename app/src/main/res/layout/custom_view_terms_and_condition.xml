@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/term_and_condition_checkbox"
+            android:textSize="20dp"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pickup_activity_terms_and_conditions"
+            android:id="@+id/textView28"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_up_taxi_dialog_terms_and_condition"
+            android:id="@+id/term_and_condition_textview"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="10dp"
+            android:layout_gravity="center_vertical" />
+</merge>

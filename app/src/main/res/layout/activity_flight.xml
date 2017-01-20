@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <include layout="@layout/activity_flight_actionbar"
+        android:id="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_above="@+id/linearLayout4"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_flight_instruction_title"
+            android:id="@+id/textView15"
+            style="@style/greenTextView"
+            android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autocomplete_departure_airport"
+                    android:hint="@string/activity_flight_departure_optional_hint"
+                    style="@style/AutocompleteFlightView"/>
+
+                <TextView
+                    android:id="@+id/autocomplete_departure_airport_clear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/edit_text_clear_btn"/>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autocomplete_arrival_airport"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner"
+                    android:hint="@string/activity_flight_arrival_optional_hint"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/autocomplete_arrival_airport_clear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/edit_text_clear_btn"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autocomplete_airline"
+                    android:hint="@string/activity_flight_airline_hint"
+                    style="@style/AutocompleteFlightView" />
+
+                <TextView
+                    android:id="@+id/autocomplete_airline_clear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/edit_text_clear_btn"/>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/autocomplete_flight_number"
+                    android:hint="@string/activity_flight_flight_number_hint"
+                    style="@style/AutocompleteFlightView" />
+
+                <TextView
+                    android:id="@+id/autocomplete_flight_number_clear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/edit_text_clear_btn"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/date_textview"
+                    android:hint="@string/common_date"
+                    style="@style/AutocompleteFlightView" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView31"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout4"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:text="@string/common_cancel"
+                android:id="@+id/cancel_btn_textview"
+                android:layout_weight="1"
+                style="@style/FlightBottomTextViewBtnStyle"/>
+
+            <TextView
+                android:text="@string/common_search"
+                android:id="@+id/search_btn_textview"
+                android:layout_weight="1"
+                style="@style/FlightBottomTextViewBtnStyle"
+                android:enabled="false"
+                android:visibility="invisible" />
+
+            <TextView
+                android:text="@string/common_done"
+                android:id="@+id/done_btn_textview"
+                android:layout_weight="1"
+                style="@style/FlightBottomTextViewBtnStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="@string/activity_flight_verify_btn"
+                    android:id="@+id/verify_btn_textview"
+                    android:layout_weight="1"
+                    style="@style/FlightBottomTextViewBtnStyle"
+                    android:paddingRight="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/activity_flight_tap_on_above"
+                    android:id="@+id/textView32"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textSize="10dp"
+                    android:paddingRight="25dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="@string/activity_flight_send_btn"
+                    android:id="@+id/send_btn_textview"
+                    android:layout_weight="1"
+                    style="@style/FlightBottomTextViewBtnStyle"
+                    android:paddingLeft="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView35" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout4">
+
+            <TextView
+                android:text="@string/activity_flight_back_to_quotes_list"
+                android:id="@+id/to_quotes_list_btn_txtview"
+                android:layout_weight="1"
+                style="@style/FlightBottomTextViewBtnStyle"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

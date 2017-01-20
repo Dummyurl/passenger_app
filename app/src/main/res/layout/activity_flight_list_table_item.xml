@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingLeft="20dp"
+android:paddingBottom="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/flightlist_airline_number_col"
+        android:id="@+id/flight_airline_number"
+        android:layout_weight="0.9"
+        style="@style/FlightColumnTextView"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/flightlist_status_col"
+        android:id="@+id/flightlist_status"
+        android:layout_weight="1"
+        style="@style/FlightColumnTextView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/flightlist_departure_time_col"
+        android:id="@+id/flightlist_departure_time"
+        android:layout_weight="1"
+        style="@style/FlightColumnTextView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/flightlist_arrival_time_col"
+        android:id="@+id/flightlist_arrival_time"
+        android:layout_weight="1"
+        style="@style/FlightColumnTextView"/>
+</LinearLayout>

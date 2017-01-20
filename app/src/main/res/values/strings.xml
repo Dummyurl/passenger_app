@@ -1,0 +1,308 @@
+<resources>
+    <!--<string name="app_name">Allen Limousine</string>-->
+    <string name="flurry_key">4M7J6TF9WSRSPXNJ5V6H</string>
+    <!--<string name="app_name">RideEze</string>-->
+    <string name="vip_default">ALC</string>
+    <string name="url">http://www.rideeze.com</string>
+    <string name="splashscreen_file_name">splashscreen_main_arsen_limo</string>
+    <bool name="is_vip">false</bool>
+    <!--<string name="app_name">Arsen Limo</string>-->
+    <string name="app_name_arsen_limo">Arsen Limo</string>
+    <string name="app_name_allen_limo">Allen Limo</string>
+
+    <string name="app_customization">Allen Limousine</string>
+    <string name="app_name_sandbox">HailMonkeyS</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="passengercount">Number of Passengers</string>
+    <string name="inputmethod">Input Method</string>
+    <string name="searchradius">Search Radius</string>
+    <string name="units">Units</string>
+    <string name="alert">Alert</string>
+    <string name="ok">OK</string>
+    <string name="notavailable">Unavailable</string>
+
+    <!-- For Company Links -->
+    <string name="statusText">If you have a VIP code please tap on Yes,otherwise tap on NO</string>
+    <string name="yesText">Yes</string>
+    <string name="yesMsgText">I have a VIP code</string>
+    <string name="noText">No</string>
+    <string name="noMsgText">I do not have a VIP code</string>
+    <string name="resetPassCompLink">Reset Pass->Company link</string>
+
+    <!-- For FlightActivity -->
+    <string name="flighttext">Use the optiors below to find your flight, so we can advise you and your driver of any delays.</string>
+    <string name="searchByFlightNo">Search by Flight Number</string>
+    <string name="SearchByRout">Search by Route</string>
+
+
+    <string name="tankyouMsg">Thank you for using RideEze for your transportation needs.A receipt will be mailed to you at </string>
+    <string name="tankyouMsglng">\n\nDon\'t forget to <u><a href="activity_b://com.passengerapp.main.RateActivity">Rate</a></u> your driver! \n\nTo write a review go to settings and tap on Write Review in My Trips tab.</string>
+
+    <!-- Strings for passanger app-->
+
+    <!-- Common -->
+    <string name="common_YES">YES</string>
+    <string name="common_NO">NO</string>
+    <string name="common_Decline">Decline</string>
+    <string name="common_OK">OK</string>
+    <string name="common_back">Back</string>
+    <string name="common_next">Next</string>
+    <string name="common_done">Done</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_accept">I accept</string>
+    <string name="common_alert">Alert</string>
+    <string name="common_warning">Warning</string>
+    <string name="common_search">Search</string>
+    <string name="common_book">Book</string>
+    <string name="common_date">Date</string>
+    <string name="common_please_wait_3_point">Please wait...</string>
+    <string name="common_no_internet_connections_after_smth">There is no Internet Connection. Please try after sometimes</string>
+    <string name="common_no_current_location">Can\'t detect your current location.</string>
+    <string name="common_gps_ask_to_enable_msg">Please enable Location Services and GPS</string>
+    <string name="common_gps_ask_to_enable_title">Location Services Not Active</string>
+
+    <!-- Request new trip -->
+    <string name="request_getflightdetails_success">GetFlightdetailes Success</string>
+    <string name="request_getflightdetails_failed">GetFlightdetailes failed</string>
+    <string name="request_resetcompanylinks">ReSetting CompanyLink!</string>
+    <string name="request_getting_pickup">Getting Pickup!</string>
+    <string name="request_getpickup_failed">GetPickup failed</string>
+    <string name="request_getpickup_success">GetPickup Success</string>
+
+    <!-- Company links -->
+    <string name="companylink_setting_companylink">Setting CompanyLink!</string>
+    <string name="companylink_congrat_vip_registred">Congratulations! you are now registered as a VIP user.</string>
+    <string name="companylink_vipcode_not_valid">The VIP code you entered is not valid.\nPlease Try again.</string>
+    <string name="companylink_please_provide_name">Please provide your name</string>
+    <string name="companylink_please_provide_email">Please provide your email</string>
+    <string name="companylink_Invalid_Email_Address">Invalid Email Address</string>
+    <string name="companylink_Please_provide_your_phone_no">Please provide your phone no.</string>
+    <string name="companylink_Please_provide_your_VIP_code">Please provide your VIP code.</string>
+
+    <!-- Route activity -->
+    <string name="routeactivity_error_load_google_map">An error occured loading Google Map. Please retry Again!</string>
+    <string name="routeactivity_route">Route</string>
+    <string name="mainactivity_location_service_not_detect">Location Service is not detected. Press OK to activate Location Service!</string>
+    <string name="mainactivity_undefinied"></string>
+
+    <string name="alertdialog_vehicle_has_arrived">Your vehicle has arrived.</string>
+    <string name="alertdialog_time_later_request_processed">Your request has been processed. You will receive a confirmation email, in addition to this notice.</string>
+    <string name="alertdialog_vehicle_arrive_your">Your</string>
+    <string name="alertdialog_vehicle_arrive">has arrived.</string>
+
+
+    <!-- Rate activity -->
+    <string name="rateactivity_please_enter_your_comments">Please enter your comments.</string>
+    <string name="rateactivity_have_no_select_any_driver">You have not select any driver.</string>
+
+    <!-- Flight list activity -->
+    <string name="flightlist_tap_on_your_flight">Please tap on your flight in list</string>
+    <string name="flightlist_select_your_airport">please select proper airport and airline codes</string>
+    <string name="flightlist_departing">Departing</string>
+    <string name="flightlist_arriving">Arriving</string>
+    <string name="flightlist_airport">Airport:</string>
+    <string name="flightlist_date">Date:</string>
+    <string name="flightlist_airline_number_col">Airline\nFlight Number</string>
+    <string name="flightlist_status_col">Status</string>
+    <string name="flightlist_departure_time_col">Departure\nTime</string>
+    <string name="flightlist_arrival_time_col">Arrival\nTime</string>
+
+    <!-- Detailed string -->
+    <string name="detailed_special_instructions">Special Instructions:</string>
+    <string name="detailed_have_no_pickups">You have no pickups.</string>
+    <string name="detailed_toast_msg_select_your_trip">please select your trip route</string>
+    <string name="detailed_call_company_office">CALL COMPANY OFFICE</string>
+    <string name="detailed_flight_info">FLIGHT INFO</string>
+    <string name="detailed_call_my_driver">CALL MY DRIVER</string>
+    <string name="flight_detail_pick_me_at">Pick up me at</string>
+
+    <!-- Utils -->
+    <string name="utils_gps_signal_good">Good</string>
+    <string name="utils_gps_signal_average">Average</string>
+    <string name="utils_gps_signal_fair">Fair</string>
+    <string name="utils_gps_signal_bad">Bad</string>
+    <string name="utils_gps_signal_no_signal">No signal</string>
+
+    <!-- Popup Dialogs -->
+    <string name="popup_instruction_get_quotes_main_text">Select your ride by tapping on your choice in this list.</string>
+    <string name="popup_instruction_get_quotes_checkbox">Do not display the message again</string>
+
+    <!-- History List -->
+    <string name="history_list_date_column">DATE</string>
+    <string name="history_list_dropoff_column">DROP OFF</string>
+    <string name="history_list_amaunt_column">AMOUNT</string>
+
+    <!-- FlightInfoDriverDialog -->
+    <string name="flight_info_dialog_ask_notified_flight">Would you like to be automaticaly notified of any gate changes or flight delays? \n\n if so,tap on yes and follow the prompts.</string>
+
+    <!--PicUpTaxiDialog-->
+    <string name="pick_up_taxi_dialog_review">Reviews</string>
+    <string name="pick_up_taxi_dialog_terms_and_condition">Terms and Conditions</string>
+    <string name="pick_up_taxi_dialog_cancel_fees_sedan">Cancellation Fees for Sedans</string>
+    <string name="pick_up_taxi_dialog_cancel_fees_limo">Cancellation Fees for Limos and Buses</string>
+    <string name="pick_up_taxi_dialog_no_show_charge">No Show Charges</string>
+    <string name="pick_up_taxi_dialog_other">Oher</string>
+    <string name="pick_up_taxi_dialog_select_destenation">Please Select a Destination.</string>
+
+    <!-- RegisterPassengerActivity -->
+    <string name="register_passenger_provide_name">Please provide your name</string>
+    <string name="register_passenger_provide_phone">Please provide your phone no</string>
+    <string name="register_passenger_provide_email">Please provide your Email.</string>
+    <string name="register_passenger_invalid_email">Invalid Email Address</string>
+    <string name="register_passenger_provide_credit_card">Please input your Credit Card data in the Next view. Your card will not Charged until you authorize payment at end of trip.</string>
+    <string name="register_passenger_vehicle_not_available">We are sorry to inform you that the vehicle you have selected is no longer available. Please select another vehicle.</string>
+    <!--<string name="register_passenger_request_is_processed">Your request for a pickup for "date" has processed and you will be receiving an email with further details.</string>-->
+    <string name="register_passenger_request_is_processed">Your reservation is confirmed.  Your confirmation number is %s.  You can make modifications in My Trips.</string>
+    <string name="register_passenger_not_want_accept_deposite">Not want to accept deposite Amount</string>
+    <string name="register_passenger_request_is_processed_email">Your request for a pickup for "date" has processed and you will be receiving an email with further details. A non-refundable deposit of %1$s will be charged to your stored credit card.</string>
+    <string name="register_passenger_request_for_later">Your Confirmation ID is %1$s .  You may modify in My Trips.</string>
+
+    <!--SetCreditCardDataDialog-->
+    <string name="set_credit_card_dialog_hint_name_on_card">Name on the card</string>
+    <string name="set_credit_card_dialog_setting_creditcar">Setting CreditCardData!</string>
+    <string name="set_credit_card_dialog_card_not_accepted">Your card was not accepted. Please try again</string>
+    <string name="set_credit_card_dialog_card_was_added">Your card was added to your account.</string>
+    <string name="set_credit_card_dialog_provide_firstname">Please provide your firstname</string>
+    <string name="set_credit_card_dialog_provide_lastname">Please provide your lastname</string>
+    <string name="set_credit_card_dialog_provide_cardtype">Please provide your cardtype.</string>
+    <string name="set_credit_card_dialog_invalid_card_visa">Invalid Visa Card</string>
+    <string name="set_credit_card_dialog_invalid_card_master">Invalid Master Card</string>
+    <string name="set_credit_card_dialog_invalid_card_discover">Invalid Discover Card</string>
+    <string name="set_credit_card_dialog_invalid_card_american">Invalid American Express Card</string>
+    <string name="set_credit_card_dialog_invalid_card">Invalid Card Number</string>
+
+    <!--SetDestinationDialog-->
+    <string name="set_destination_dialog_current_location">Current Location</string>
+    <string name="set_destination_dialog_please_enter_current_location">Please enter Current Location.</string>
+    <string name="set_destination_dialog_please_enter_destination_location">Please enter Destination Location.</string>
+    <string name="set_destination_dialog_please_enter_valid_current_location">Please enter valid Current Location.</string>
+    <string name="set_destination_dialog_please_enter_valid_destination_location">Please enter valid Destination Location.</string>
+    <string name="set_destination_dialog_not_support_speech">Ops! Your device doesn\'t support Speech to Text</string>
+    <string name="set_destination_dialog_start_location_history">Start Location History</string>
+    <string name="set_destination_dialog_end_location_history">End Location History</string>
+    <string name="set_destination_dialog_prepeare_route">Please waiting. Prepearing route</string>
+    <string name="set_destination_dialog_no_route">There is no route</string>
+    <string name="set_destination_dialog_start">Start</string>
+    <string name="set_destination_dialog_end">End</string>
+
+    <!--VehicleStylesDialog-->
+    <string name="set_destination_setting_companylink">Setting CompanyLink!</string>
+
+    <!--MyQuotesFragment -->
+    <string name="my_quotes_fragment_per_hour">PER\nHOUR</string>
+    <string name="my_quotes_fragment_hrs">HRS</string>
+    <string name="my_quotes_fragment_fare">FARE</string>
+    <string name="my_quotes_fragment_ride">RIDE</string>
+    <string name="my_quotes_fragment_riderating">RIDER\nRATING</string>
+    <string name="my_quotes_fragment_passanger_suitcase">Passangers\nSuitcases</string>
+
+    <!--MyTripsFragment-->
+    <string name="my_trips_fragment_get_flight_details">GetFlightdetailes Success</string>
+    <string name="my_trips_fragment_get_flight_details_failed">GetFlightdetailes failed</string>
+    <string name="my_trips_fragment_get_cancel_trip">CANCEL TRIP</string>
+    <string name="my_trips_fragment_get_write_review">WRITE REVIEW</string>
+    <string name="my_trips_fragment_get_read_review">READ REVIEW</string>
+    <string name="my_trips_fragment_get_getting_pickrequest">Getting PickupRequests!</string>
+    <string name="my_trips_fragment_get_getting_flight_detail">Getting FlightDetail</string>
+    <string name="my_trips_fragment_get_updating_pickuptime">Updating PickupTime</string>
+    <string name="my_trips_fragment_get_flight">Flight</string>
+    <string name="my_trips_fragment_get_departs_on">departs on</string>
+    <string name="my_trips_fragment_get_departs">Departs</string>
+    <string name="my_trips_fragment_get_arrives">Arrives</string>
+    <string name="my_trips_fragment_get_time">Time</string>
+    <string name="my_trips_fragment_get_terminal">Terminal</string>
+    <string name="my_trips_fragment_text_to_modify">Your ride is on the way! If you wish to cancel this trip, you can do so below.</string>
+    <string name="my_trips_fragment_text_to_modify_unassign">Your reservation has been confirmed. To make changes tap on button below.</string>
+    <string name="my_trips_fragment_get_modify_trip">MODIFY TRIP</string>
+    <string name="my_edit_trips_fragment_view">VIEW</string>
+    <string name="my_edit_trips_fragment_edit">EDIT</string>
+
+    <!--ModifyTrip -->
+    <string name="modify_trip_activity_title">Modify Trip</string>
+    <string name="modify_trip_activity_update_when">UPDATE WHEN</string>
+    <string name="modify_trip_activity_update_flight">UPDATE FLIGHT INFO</string>
+    <string name="modify_trip_activity_fail_update">Update error</string>
+
+    <!--NewTripFragment-->
+    <string name="my_trips_fragment_get_select_future_date">Please Select Future Date.</string>
+    <string name="my_trips_fragment_get_enter_hours">Please enter Hours.</string>
+    <string name="my_trips_fragment_get_enter_valid_time">Please enter valid time.</string>
+    <string name="my_trips_fragment_get_notify_about_flight">Would you like to be automaticaly notified of any gate changes or flight delays?</string>
+    <string name="my_trips_fragment_get_notify_about_flight_condition">Would you like to be automaticaly notified of any gate changes or flight delays?\n\nif so,tap on yes and follow the prompts.</string>
+    <string name="my_trips_fragment_get_select_date_of_pickup">Please select date of pickup.</string>
+    <string name="my_trips_fragment_get_select_time_of_pickup">Please select time of pickup.</string>
+    <string name="new_trip_anyquestion_call_office">Any Questions? Call Office</string>
+    <string name="new_trip_anyquestion_call_office_upcase">ANY QUESTIONS? CALL OFFICE</string>
+    <string name="my_trips_fragment_reservation_id_title">Reservation ID:</string>
+    <string name="my_trips_fragment_trip_number_title">Trip Number:</string>
+
+    <!--SettingFragment-->
+    <string name="settings_fragment_update_cc">Update Credit Card...</string>
+
+    <!--PickUp Activity -->
+    <string name="pickup_activity_title">Pickup information</string>
+    <string name="pickup_activity_driver">DRIVER</string>
+    <string name="pickup_activity_rider_rating">RIDER RATING</string>
+    <string name="pickup_activity_vehicle_number">Vehicle Number:</string>
+    <string name="pickup_activity_desc">Desc.:</string>
+    <string name="pickup_activity_location">Location:</string>
+    <string name="pickup_activity_trip_distance">Trip Distance:</string>
+    <string name="pickup_activity_fare">Fare:</string>
+    <string name="pickup_activity_have_coupon">Have Coupon?</string>
+    <string name="pickup_activity_total_fare">TOTAL FARE:</string>
+    <string name="pickup_activity_total_fare_lowcase">Total Fare:</string>
+    <string name="pickup_activity_request_ride_btn">REQUEST RIDE</string>
+    <string name="pickup_activity_cancel_btn">CANCEL</string>
+    <string name="pickup_activity_terms_and_conditions">I have read and agree to </string>
+    <string name="pickup_activity_terms_and_conditions_warn_msg">Please read Terms and Conditions and check the box at the bottom of the Request Ride view</string>
+    <string name="pickup_activity_terms_and_conditions_warn_msg_choose">Please read [Terms and Conditions] and press "I accept" button or check the box at the bottom of the Request Ride view</string>
+    <string name="pickup_activity_coupon_applied">Coupon Applied</string>
+
+    <!--Enter Coupon Activity -->
+    <string name="pickup_enter_coupon_title">Enter coupon information</string>
+    <string name="pickup_enter_coupon_instructions">Please enter coupon code below:</string>
+    <string name="pickup_enter_coupon_warn_msg">Coupon field is empty!</string>
+
+    <!--Activity Flight-->
+    <string name="activity_flight_actionbar_cancel_flight">Cancel Flight Data</string>
+    <string name="activity_flight_actionbar_title">My Flight</string>
+    <string name="activity_flight_instruction_title">Please enter Airline and Flight number below</string>
+    <string name="activity_flight_departure_hint">Departure Airport</string>
+    <string name="activity_flight_arrival_hint_simple">Arrival Airport</string>
+    <string name="activity_flight_departure_optional_hint">Departing From (opitonal)</string>
+    <string name="activity_flight_arrival_hint">Arrival Airport (Optional)</string>
+    <string name="activity_flight_arrival_optional_hint">Going To (Optional)</string>
+    <string name="activity_flight_airline_hint">Airline</string>
+    <string name="activity_flight_flight_number_hint">Flight Number</string>
+    <string name="activity_flight_hint_flight_for">Flight for </string>
+    <string name="activity_flight_input_depature_and_arrival">Please Input Departure Airport and Arrival Airport</string>
+    <string name="activity_flight_input_depature_or_arrival">Please Input Departure Airport or Arrival Airport</string>
+    <string name="activity_flight_provide_airline">Please provide an airline</string>
+    <string name="activity_flight_provide_flight_number">Please provide a flight number</string>
+    <string name="activity_flight_no_results_msg">No such flight number for this Airline. Enter Arrival (or Departure) airport and Search for your flight number.</string>
+    <string name="activity_flight_no_results_msg_please_try_again">No flights were found.  Please try again</string>
+    <string name="activity_flight_no_results_by_arrival_msg">No such flight number for this Airports.</string>
+    <string name="activity_flight_pls_select_flight_msg">Please, select flight.</string>
+    <string name="activity_flight_instruction_for_driver">Special instructions for driver</string>
+    <string name="activity_flight_instruction_for_driver_selected_flight_number">Selected Flight Number:</string>
+    <string name="activity_flight_instruction_for_driver_car_service_baggage_area">Meet me at the Baggage area</string>
+    <string name="activity_flight_instruction_for_driver_car_service_limo_pickup">Meet me curbside at the limo pickup area</string>
+    <string name="activity_flight_instruction_for_driver_taxi_taxi_pickup">Meet me curbside at the taxi pickup area</string>
+    <string name="activity_flight_data_error">Data error</string>
+    <string name="activity_flight_information">Tap on VERIFY if you wish to verify that the above information is valid and to find your fkight number if not valid.\n\nTap on SEND if you want to send to your driver the info above as is, without verification.\n\nTap on GO BACK TO QUOTES LIST if you wish to select another vehicle.</string>
+    <string name="activity_flight_back_to_quotes_list">GO BACK TO QUOTES LIST</string>
+    <string name="activity_flight_verify_btn">VERIFY</string>
+    <string name="activity_flight_send_btn">SEND</string>
+    <string name="activity_flight_tap_on_above">Tap on above to verify flight</string>
+    <string name="activity_flight_manual_flight_info">Manual flight info:</string>
+    <string name="enter_coupon_activity_discount">Discount</string>
+
+    <!-- Cancel view -->
+    <string name="cancel_activity_wrg_msg_enter_reason">Please enter your reason</string>
+    <string name="cancel_activity_wrg_msg_driver_not_needed">"Driver not needed</string>
+
+    <!-- AIzaSyA8uSWN3r4r-tBDtGyO24ubiLWJxP3h-Hc -->
+
+    <!-- LAST JAVA CLASS WAS SettingFragment 25.06.2015 -->
+</resources>

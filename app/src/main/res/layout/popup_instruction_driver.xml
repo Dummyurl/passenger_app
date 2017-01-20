@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/theme"
+                android:weightSum="3" >
+
+                <Button
+                    android:id="@+id/btnFlightCancelInstructionDriver"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_bg"
+                    android:text=" Cancel Flight Data "
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2.8"
+                    android:gravity="center_horizontal"
+                    android:text="Instructions for Driver"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btnDone"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_bg"
+                    android:text="Done"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_spinner"
+                android:orientation="vertical"
+                android:padding="0dp" >
+
+                <RadioGroup
+                    android:id="@+id/rbPickgroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rbWaitPickup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Meet me curbside at the limousine stand"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbMeetTaxiPckUp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Meet me at the Taxi pickup area"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbMeetbaggage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Meet me at the baggage claim area"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbMeetInter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Meet me at the International area."
+                        android:textColor="@color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#dfdfdf" />
+
+                <EditText
+                    android:id="@+id/edtInstrDriver"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:gravity="top"
+                    android:lines="10"
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_gray" />
+
+            </LinearLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/btnCloseInstDrvr"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/btn_bg"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <!--  <TextView
+                android:id="@+id/txtDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_accept_bg"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="Done"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" /> -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

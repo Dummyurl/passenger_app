@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/TripDetailItemLayout"
+                android:id="@+id/pickup_layout"
+                >
+
+                <ImageView
+                    style="@style/TripDetailImageIcon"
+                    android:background="@color/yellow"
+                    android:src="@drawable/location_icon" />
+
+                <TextView
+                    style="@style/TripDetailTextView"
+                    android:text="Pick Up"/>
+
+                <EditText
+                    style="@style/TripDetailEditTextView"
+                    android:id="@+id/pickUpEditText" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TripDetailItemLayout"
+                android:id="@+id/dropoff_layout"
+                >
+
+                <ImageView
+                    style="@style/TripDetailImageIcon"
+                    android:background="#f90404"
+                    android:src="@drawable/locationend_icon" />
+
+                <TextView
+                    style="@style/TripDetailTextView"
+                    android:text="Drop Off" />
+
+                <EditText
+                    style="@style/TripDetailEditTextView"
+                    android:id="@+id/dropOffEditText" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TripDetailItemLayout"
+                android:id="@+id/when_layout"
+                >
+
+                <ImageView
+                    style="@style/TripDetailImageIcon"
+                    android:background="@color/green"
+                    android:src="@drawable/time_icon" />
+
+                <TextView
+                    style="@style/TripDetailTextView"
+                    android:text="WHEN"/>
+
+                <EditText
+                    style="@style/TripDetailEditTextView"
+                    android:id="@+id/whenEditText" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TripDetailItemLayout"
+                android:id="@+id/passangers_layout"
+                >
+
+                <ImageView
+                    style="@style/TripDetailImageIcon"
+                    android:background="@color/dark_blue"
+                    android:src="@drawable/passangers_icon" />
+
+                <TextView
+                    style="@style/TripDetailTextView"
+                    android:layout_width="match_parent"
+                    android:text="HOW MANY PASSENGERS?" />
+
+                <EditText
+                    style="@style/TripDetailEditTextView"
+                    android:id="@+id/countPassengersEditText" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TripDetailItemLayout"
+                android:id="@+id/rentby_layout"
+                >
+
+                <ImageView
+                    style="@style/TripDetailImageIcon"
+                    android:background="@color/blue"
+                    android:src="@drawable/fare_icon" />
+
+                <TextView
+                    style="@style/TripDetailTextView"
+                    android:text="RENT BY" />
+
+                <EditText
+                    style="@style/TripDetailEditTextView"
+                    android:id="@+id/rentByEditText" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TripDetailItemLayout"
+                android:id="@+id/vehicle_layout"
+                >
+
+
+                <TextView
+                    style="@style/TripDetailTextView"
+                    android:layout_width="wrap_content"
+                    android:text="YOUR VEHICLE STYLE"/>
+
+                <EditText
+                    style="@style/TripDetailEditTextView"
+                    android:id="@+id/vehicleStyleEditText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TripDetailItemLayout"
+                android:id="@+id/notes_layout"
+                >
+
+                <ImageView
+                    style="@style/TripDetailImageIcon"
+                    android:background="@color/yellow"
+                    android:src="@drawable/notes_icon" />
+
+                <TextView
+                    style="@style/TripDetailTextView"
+                    android:text="NOTES" />
+
+                <EditText
+                    style="@style/TripDetailEditTextView"
+                    android:id="@+id/notesEditText" />
+            </LinearLayout>
+
+           <include layout="@layout/activity_setting_trip_detail_info"></include>
+
+            <LinearLayout
+                style="@style/TripDetailItemLayout"
+                android:id="@+id/flight_layout"
+                >
+
+                <ImageView
+                    style="@style/TripDetailImageIcon"
+                    android:background="@color/blue"
+                    android:src="@drawable/plane_icon" />
+
+                <TextView
+                    style="@style/TripDetailTextView"
+                    android:layout_weight="2"
+                    android:text="FLIGHT INFO" />
+
+                <TextView
+                    style="@style/TripDetailButtonTextView"
+                    android:id="@+id/view_flight_btn"
+                    android:text="View"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/TripDetailItemLayout"
+                android:id="@+id/call_driver_layout"
+                >
+
+                <ImageView
+                    style="@style/TripDetailImageIcon"
+                    android:background="@color/driver_blue_menu"
+                    android:src="@drawable/phone_icon" />
+
+                <TextView
+                    style="@style/TripDetailTextView"
+                    android:layout_weight="2"
+                    android:text="CALL MY DRIVER" />
+
+                <TextView
+                    style="@style/TripDetailButtonTextView"
+                    android:id="@+id/call_driver_btn"
+                    android:text="Call"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TripDetailItemLayout"
+                android:id="@+id/call_company_layout"
+                >
+
+                <ImageView
+                    style="@style/TripDetailImageIcon"
+                    android:background="@color/driver_blue_menu"
+                    android:src="@drawable/phone_icon" />
+
+                <TextView
+                    style="@style/TripDetailTextView"
+                    android:layout_weight="2"
+                    android:text="CALL COMPANY OFFICE" />
+
+                <TextView
+                    style="@style/TripDetailButtonTextView"
+                    android:id="@+id/call_company_btn"
+                    android:text="Call"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/status_ride_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Your ride is on the way! If you wish to modify this trip, you can do so below"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TripDetailWidthButtonLayout"
+                android:id="@+id/modify_btn">
+
+                <TextView
+                    style="@style/TripDetailWidthButtonTextView"
+                    android:text="@string/my_trips_fragment_get_modify_trip"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/TripDetailWidthButtonLayout"
+                android:id="@+id/cancel_btn">
+
+                <TextView
+                    style="@style/TripDetailWidthButtonTextView"
+                    android:text="@string/my_trips_fragment_get_cancel_trip" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/TripDetailWidthButtonLayout"
+                android:id="@+id/write_review_btn">
+
+                <TextView
+                    style="@style/TripDetailWidthButtonTextView"
+                    android:text="@string/my_trips_fragment_get_write_review" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/TripDetailWidthButtonLayout"
+                android:id="@+id/read_review_btn">
+
+                <TextView
+                    style="@style/TripDetailWidthButtonTextView"
+                    android:text="@string/my_trips_fragment_get_read_review" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,121 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.passengerapp"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 2
+        versionName "1.1"
+        buildConfigField "String", "URL", '"http://www.rideeze.com"'
+        buildConfigField "String", "VIP_DEFAULT", '"ALB"'
+        buildConfigField "String", "SPLASHSCREEN_FILE_NAME", '"splashscreen_main_arsen_limo"'
+        buildConfigField "boolean", "IS_VIP", "false"
+        buildConfigField "float", "ACCU", "12"
+        buildConfigField "String", "GOOGLE_API_KEY", '"AIzaSyCEA7toSSHxQ3cnRdE4PvoxLXnetXk7Buk"'
+
+        resValue 'string', 'app_name', 'Custom app'
+        resValue 'string', 'google_map_api', 'AIzaSyAwI1cPb44Bo3s0z47Zvs938HSRbuIgOt0'
+
+    }
+    productFlavors {
+        arsen_limo {
+            applicationId "com.arsenlimo.hererebps"
+            buildConfigField "String", "URL", '"http://www.rideeze.com"'
+            buildConfigField "String", "VIP_DEFAULT", '"ALC"'
+            buildConfigField "String", "SPLASHSCREEN_FILE_NAME", '"splashscreen_main_arsen_limo"'
+            buildConfigField "boolean", "IS_VIP", "false"
+            archivesBaseName = "Passanger-"
+            resValue 'string', 'app_name', 'Arsen Limo'
+
+        }
+
+        allen_limo {
+            applicationId "com.allenlimo.hererebps"
+            buildConfigField "String", "URL", '"http://www.rideeze.com"'
+            buildConfigField "String", "VIP_DEFAULT", '"AEK"'
+            buildConfigField "String", "SPLASHSCREEN_FILE_NAME", '"splashscreen_main_allenl_imo"'
+            buildConfigField "boolean", "IS_VIP", "false"
+            archivesBaseName = "Passanger-"
+            resValue 'string', 'app_name', 'Allen Limo'
+        }
+
+        park_city_happy_ride {
+            applicationId "com.parkcityhr.hererebps"
+            buildConfigField "String", "URL", '"http://www.rideeze.com"'
+            buildConfigField "String", "VIP_DEFAULT", '"ALF"'
+            buildConfigField "String", "SPLASHSCREEN_FILE_NAME", '"splashscreen_main_park_city_hr"'
+            buildConfigField "boolean", "IS_VIP", "false"
+            archivesBaseName = "Passanger-"
+            resValue 'string', 'app_name', 'Park Cities HR'
+        }
+
+        paul_lien_limo {
+            applicationId "com.paullien.hererebps"
+            buildConfigField "String", "URL", '"http://www.rideeze.com"'
+            buildConfigField "String", "VIP_DEFAULT", '"ALG"'
+            buildConfigField "String", "SPLASHSCREEN_FILE_NAME", '"splashscreen_paul_lien_limo"'
+            buildConfigField "boolean", "IS_VIP", "false"
+            archivesBaseName = "Passanger-"
+            resValue 'string', 'app_name', 'Paul Lien Limo'
+        }
+
+        tarun_limo {
+            applicationId"com.tarun.hererebps"
+            buildConfigField"String", "URL", '"http://www.rideeze.com"'
+            buildConfigField"String", "VIP_DEFAULT", '"AMT"'
+            buildConfigField"String", "SPLASHSCREEN_FILE_NAME", '"splashscreen_tarun_limo"'
+            buildConfigField"boolean", "IS_VIP", "false"
+            archivesBaseName = "Passanger-"
+            resValue'string', 'app_name', 'Tarun Limo'
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.google.android.gms:play-services:7.5.+'
+    compile 'com.google.code.gson:gson:2.+'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile project(':androidimageslider')
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        transitive = true;
+    }
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'me.tatarka:gradle-retrolambda:3.3.0-beta2'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:weightSum="3"
+        android:id="@+id/quotes_header_layout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:width="0px"
+                android:layout_height="match_parent"
+                android:text="DATE"
+                android:id="@+id/history_list_date"
+                android:background="@color/dark_gray"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:width="0px"
+                android:text="@string/history_list_dropoff_column"
+                android:id="@+id/history_list_dropoff"
+                android:background="@color/dark_graylight"
+                android:textColor="@color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom|top"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:width="0px"
+                android:text="@string/history_list_amaunt_column"
+                android:id="@+id/history_list_amount"
+                android:background="@color/dark_graylight"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/my_quotes_header_title_size" />
+        </LinearLayout>
+
+        <!--</TableRow>
+    </TableLayout>-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/quotes_data_layout"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/quotes_header_layout">
+        <ScrollView
+            android:id="@+id/quotes_data_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/quotes_history_data_layout">
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>
